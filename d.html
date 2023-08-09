@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma: Puzzle 3</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 3rem;
+        }
+        p {
+            font-size: 1.2rem;
+            margin-top: 2rem;
+        }
+        .hidden-message {
+            display: none;
+        }
+        .hint {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 1rem;
+        }
+    </style>
+    <script>
+        function toggleMessage() {
+            var hiddenMessage = document.querySelector('.hidden-message');
+            if (hiddenMessage.style.display === 'none') {
+                hiddenMessage.style.display = 'block';
+            } else {
+                hiddenMessage.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Secrets in Style</h1>
+    <p>Unlock the hidden wisdom...</p>
+
+    <div class="hidden-message">
+        <p>Red Herring</p>
+    </div>
+
+    <button onclick="toggleMessage()">Reveal</button>
+    <p class="hint">Sometimes, the hidden is just a click away...</p>
+</body>
+</html>
